@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 18.75rem;
+				height: 12.5rem;
+				background-color: red;
+				position: relative;
+				animation: mymove 5s infinite;
+				animation-direction: alternate-reverse;
+			}
+			
+			@keyframes mymove{
+				0% {background-color: red;left: 0px;top: 0px;}
+				25% {background-color: green; left: 200px; top: 0;}
+				50% {background-color: yellow; left: 200px; top: 200px;}
+				75% {background-color: blue; left: 0; top: 200px;}
+				100% {background-color: red; left: 0; top: 0;}
+			}
+			/* Chrome Sarafi兼容问题 */
+			@-webkit-keyframes mymove {
+				0% {background-color: red;left: 0px;top: 0px;}
+				25% {background-color: green; left: 200px; top: 0;}
+				50% {background-color: yellow; left: 200px; top: 200px;}
+				75% {background-color: blue; left: 0; top: 200px;}
+				100% {background-color: red; left: 0; top: 0;}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>POSITION 动画</title>
+		<style type="text/css">
+			#myDIV {
+				width: 25rem;
+				height: 18.75rem;
+				border: 0.0625rem solid block;
+				background-image: url(next.JPG);
+				background-position: top left;
+				animation: mymove 6s infinite;
+				/* Safari Chrome Opera */
+				-webkit-animation: mymove 6s infinite;
+			}
+			@keyframes mymove{
+				50% {background-position: center;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="myDIV"></div>
+	</body>
+</html>

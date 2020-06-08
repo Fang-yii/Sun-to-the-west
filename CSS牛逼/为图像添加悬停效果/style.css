@@ -1,0 +1,15 @@
+/* 2.全局边距为0 */
+* {margin: 0;padding: 0;}
+/* 3.定义下拉列表样式 */
+#navlist {position: relative;}
+#navlist li {margin: 0;padding: 0;top: 0;position: absolute;list-style: none;}
+#navlist li, #navlist a {height: 44px;display: block;}
+/* 定义home图片样式 */
+#home {left: 0;width: 45px;background: url(images/home.JPG) 0 0;}
+#home a:hover {background: url(images/home1.jpg) 0 -45px;}
+/* prve */
+#prev {left: 65px;width: 46px;background: url(images/pro.JPG) 45px 0;}
+#prev a:hover {background: url(images/pro1.jpg) -45px -45px;}
+/* next */
+#next {left: 116px;width: 45px;background: url(images/next.JPG) 90px 0;}
+#next a:hover {background: url(images/next1.jpg) -90px -45px;}
