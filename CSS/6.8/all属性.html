@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- all  用于重置所有属性 -->
+		<style type="text/css">
+			html {font-size: small;color: blue;}
+			
+			#ex1 {
+				background-color: yellow;
+				color: red;
+			}
+			#ex2 {
+				background-color: yellow;
+				color: red;
+				all: inherit;
+			}
+			#ex3 {
+				background-color: yellow;
+				color: red;
+				all: initial;
+			}
+			#ex4 {
+				background-color: blue;
+				color: red;
+				all: unset;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ex1">This is first all property</div>
+		<p>不使用all属性值</p>
+		<br />
+		<br />
+		<div id="ex2">This is first all property</div>
+		<p>使用initial属性值</p>
+		<br />
+		<br />
+		<div id="ex3">This is first all property</div>
+		<p>使用inherit属性值</p>
+		<br />
+		<br />
+		<div id="ex4">This is first all property</div>
+		<p>使用unset属性值</p>
+		<br />
+		<p style="background-color: red;">initial初始化所有值  inherit继承父元素html的值（小号字体，蓝颜色）  unset修改所有值为父元素或初始的值</p>
+	</body>
+</html>

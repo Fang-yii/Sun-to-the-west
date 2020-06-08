@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!--align-content  属性的各项对齐容器-->
+		<style type="text/css">
+			#align-content {
+				width: 300px;
+				height: 400px;
+				border: 1px solid #c3c3c3;
+				align-content: center;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#align-content div {
+				width: 300px;
+				height: 50px;
+			}
+		</style>
+		<!-- 容器内必须有多行项目 才能产生渲染效果 -->
+		
+		<!-- align-items  flex容器的对齐方式 -->
+		<style type="text/css">
+			#align-items {
+				width: 200px;
+				height: 300px;
+				border: 1px solid #c3c3c3;
+				display: flex;
+				align-items: center;
+			}
+			#align-items div {
+				flex: 1;
+			}
+		</style>
+		<!-- div元素内必须有值才能显示 -->
+		
+		<!-- align-self  flex子项在轴方向上的对齐方式 -->
+		<style type="text/css">
+			#align-self {
+				width: 80px;
+				height: 300px;
+				border: 1px solid #c3c3c3;
+				display: flex;
+				align-items: flex-start;
+			}
+			#align-self div {
+				flex: 1;
+			}
+			#blueDiv {
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- align-content -->
+		<div id="align-content">
+			<div style="background-color: coral"></div>
+			<div style="background-color: lightblue"></div>
+			<div style="background-color: yellow"></div>
+		</div>
+		<p style="background-color: red;">8个值：stretch默认,center中心,flex-start开头,flex-end结尾,space-between项目各行间留白,space-around行前行中行后留白,initial默认,inherit继承</p>
+		
+		<!-- align-items -->
+		<div id="align-items">
+			<div style="background-color: coral;">a</div>
+			<div style="background-color: lightblue;">aa</div>
+			<div style="background-color: green;">ab need more content</div>
+		</div>
+		<p style="background-color: red;">7个值：stretch默认,center居中,flex-start开头,flex-end结尾,baseline基线,initial默认,inherit继承</p>
+		
+		<!-- align-self -->
+		<div id="align-self">
+			<div style="background-color: coral;">a</div>
+			<div style="background-color: lightblue;" id="blueDiv">aa</div>
+			<div style="background-color: green;">ab need more content</div>
+		</div>
+		<p style="background-color: red;">8个值：auto默认,stretch默认,center居中,flex-start开头,flex-end结尾,baseline基线,initial默认,inherit继承</p>
+	</body>
+</html>
